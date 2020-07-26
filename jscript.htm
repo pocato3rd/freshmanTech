@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>School of Mages - Cato</title>
+      <link rel = "icon" href = "images/earth-icon.jpg"/>
+      <link rel = "stylesheet" href = "techsite.css"/>
+      <link rel = "stylesheet" href = "jscript.css"/>
+      <link rel = "stylesheet" href = "carousel.css"/>
+   </head>
+   <body>
+     <div id="menu-bar">
+        <p class="menu-bar-link"><a class="pageLink" href="index.htm">HOME</a></p>
+        <p class="menu-bar-link"><a class="pageLink" href="bcamsc.htm">BCAMSC</a></p>
+        <p class="menu-bar-link"><a class="pageLink" href="penn.htm">PENNFIELD</a></p>
+        <p class="menu-bar-link"><a class="pageLink" href="jscript.htm">JSCRIPT</a></p>
+        <p class="menu-bar-link"><a class="pageLink" href="draw.htm">DRAW A PICTURE</a></p>
+        <p class="menu-bar-link"><a class="pageLink" href="space.htm">OUR SOLAR SYSTEM</a></p>
+     </div>
+     <div id="menu-open">Menu</div>
+     <div id="main-container">
+	 <h2>~ School Of Mages ~</h2>
+     <h3>About My Program</h3>
+     <p1>&nbsp &nbsp My program, 'School of Mages' is a javascript choice based game. The user goes through the different stages of the game choosing answers. If the the answer is wrong, they'll be told "Game Over" and cannot continue from that point. There are several questions where there is no right or wrong answer, simply a choice of what the user wants. However, these choices affect the game later in. My game code is about 687 lines of code. It took me around three or four days to completely flesh out and complete this game. Now what you, being the user, are waiting for, the game:</p1>
+     <h3>My Program</h3>
+	 <p class = "story start">You are offered a chance in a mage school. You are given the options of magic study of these:</p>
+	 <div class = "choices start">
+	    <button id="fire" class="active">FIRE</button>
+	    <button id="water" class="active">WATER</button>
+	    <button id="earth" class="active">EARTH</button>
+	 </div>
+	 <!-- BEGINNING OF FIRST FIRE ROUTE -->
+	 <p class = "story" id="moralFireQ">Did you choose to study FIRE for destruction?</p>
+	 <div class = "choices" id="moralFireAns">
+	    <button id="moralFireYes" class="moralFireCho">YES</button>
+	    <button id="moralFireNo" class="moralFireCho">NO</button>
+	 </div>
+	 <p class = "story" id="willFireQ">Do you have the WILLPOWER to command FIRE?</p>
+	 <div class = "choices" id="willFireAns">
+	    <button id="willFireYes" class="willFireCho">YES</button>
+	    <button id="willFireNo" class="willFireCho">NO</button>
+	 </div>
+	 <!-- END OF FIRST FIRE ROUTE -->
+	 <!-- BEGINNING OF FIRST WATER ROUTE -->
+	 <p class = "story" id="moralWaterQ">Did you choose to study WATER to heal the oceans?</p>
+	 <div class = "choices" id="moralWaterAns">
+	    <button id="moralWaterYes" class="moralWaterCho">YES</button>
+	    <button id="moralWaterNo" class="moralWaterCho">NO</button>
+	 </div>
+	 <p class = "story" id="patienceWaterQ">Do you have the PATIENCE to coax WATER?</p>
+	 <div class = "choices" id="patienceWaterAns">
+	    <button id="patienceWaterYes" class="patienceWaterCho">YES</button>
+	    <button id="patienceWaterNo" class="patienceWaterCho">NO</button>
+	 </div>
+	 <!-- END OF FIRST FIRE ROUTE -->
+	 <!-- BEGINNING OF FIRST EARTH ROUTE -->
+	 <p class = "story" id="moralEarthQ">Did you choose to study EARTH to hurt people or animals?</p>
+	 <div class = "choices" id="moralEarthAns">
+	    <button id="moralEarthYes" class="moralEarthCho">YES</button>
+	    <button id="moralEarthNo" class="moralEarthCho">NO</button>
+	 </div>
+	 <p class = "story" id="senseEarthQ">Do you have the acute SENSES to understand the EARTH?</p>
+	 <div class = "choices" id="senseEarthAns">
+	    <button id="senseEarthYes" class="senseEarthCho">YES</button>
+	    <button id="senseEarthNo" class="senseEarthCho">NO</button>
+	 </div>
+	 <!-- END OF FIRST EARTH ROUTE -->
+	 <!-- BEGINNING OF PART 2 -->
+	 <div id="mainChoice2">
+	    <p class="story" id="welcome">Welcome to the SCHOOL OF MAGES. While studying, you will learn to harness your strength to command your element to your bidding. You will learn to use your element wisely.<br class="spacing"><br class="spacing"></p>
+	    
+	    <p class="story" id="journeyQ">THREE MONTHS LATER: You have learned your element well. The elder mages are ready for you to take the final test. They offer you the choice. Will you climb a mountain to face a DRAGON that is terrorizing the villages nearby? Or will you travel to a lake to battle an intense monster in a TEMPLE?</p>
+	    <div class = "choices" id="journeyAns">
+	       <button id="journeyDragon" class="journeyCho">DRAGON</button>
+	       <button id="journeyTemple" class="journeyCho">TEMPLE</button>
+	    </div>
+	    <p class="story" id="climbDragonQ">Can you climb well?</p>
+	    <div class = "choices" id="climbDragonAns">
+	       <button id="climbDragonYes" class="climbDragonCho">YES</button>
+	       <button id="climbDragonNo" class="climbDragonCho">NO</button>
+	    </div>
+	    <p class="story" id="packDragonQ">Do you pack light or heavy?</p>
+	    <div class = "choices" id="packDragonAns">
+	       <button id="packDragonLight" class="packDragonCho">LIGHT</button>
+	       <button id="packDragonHeavy" class="packDragonCho">HEAVY</button>
+	    </div>
+	    <p class="story" id="weaponDragonQ">You climb the mountain quietly and without any catches. You decide to climb above the DRAGON's lair to get the better initial advantage.<br><br>The elders gave you a magic scroll. With it you can summon one of the two:</p>
+	    <div class = "choices" id="weaponDragonAns">
+	       <button id="weaponDragonSword" class="weaponDragonCho">SWORD</button>
+	       <button id="weaponDragonBow" class="weaponDragonCho">CROSSBOW</button>
+	    </div>
+	    <p class="story" id="strategySwordQ">You whisper the incantation and a sword appears in your hand. Smirking you peer of the edge to the entrance into the lair. You have to make a decision.</p>
+	    <div class = "choices" id="strategySwordAns">
+	       <button id="strategySwordOff" class="strategySwordCho">OFFENSE</button>
+	       <button id="strategySwordDef" class="strategySwordCho">DEFENSE</button>
+	    </div>
+	    <p class="story" id="pathSwordQ">Do you drop down or climb down?</p>
+	    <div class = "choices" id="pathSwordAns">
+	       <button id="pathSwordDrop" class="pathSwordCho">DROP</button>
+	       <button id="pathSwordClimb" class="pathSwordCho">CLIMB</button>
+	    </div>
+	    <p class="story" id="exitSwordQ">You pick up a rock and drop it down. It breaks once it hits the ground. Waking the DRAGON. The DRAGON lumbers out of the cave and spreads its wings. Roaring to the stars. You drop down on top of the DRAGON's head. The sword drives between the DRAGON's eyes. The dragon instantly falls to a rest on the ground. You're breathing heavily, but you faired much better than the DRAGON<br>Now you need a way down. Do you cut off the DRAGON's wings and GLIDE down, or do you CLIMB down the way that you came up?</p>
+	    <div class = "choices" id="exitSwordAns">
+	       <button id="exitSwordGlide" class="exitSwordCho">GLIDE</button>
+	       <button id="exitSwordClimb" class="exitSwordCho">CLIMB</button>
+	    </div>
+	    <p class="story" id="accBowQ">You whisper the incantation and a crossbow appears in your arms, replacing the scroll. A quiver of 15 bolts also appears on your back. Checking the sight, you make a quick decision. Do you have good accuracy?</p>
+	    <div class = "choices" id="accBowAns">
+	       <button id="accBowYes" class="accBowCho">YES</button>
+	       <button id="accBowNo" class="accBowCho">NO</button>
+	    </div>
+        <p class="story" id="rangeBowQ">Do you attack short range or long range?</p>
+        <div class = "choices" id="rangeBowAns">
+            <button id="rangeBowShort" class="rangeBowCho">SHORT</button>
+            <button id="rangeBowLong" class="rangeBowCho">LONG</button>
+        </div>
+        <p class="story" id="aimBowQ">You drop a rock, it shatters as it strikes the ground. It wakes the DRAGON. The DRAGON snakes out peering around for the source of the sound. You fire a bolt. It strikes between the scales of the DRAGON's right foreleg. He roars in pain and lifts off. He still hasn't seen you. Which do you aim for?<p>
+        <div class = "choices" id="aimBowAns">
+            <button id="aimBowHead" class="aimBowCho">HEAD</button>
+            <button id="aimBowWings" class="aimBowCho">WINGS</button>
+        </div>
+        <!-- END OF DRAGON DRAGON ROUTE -->
+        <p class="story" id="puzzleTempleQ">Are you good at solving puzzles?</p>
+        <div class = "choices" id="puzzleTempleAns">
+            <button id="puzzleTempleYes" class="puzzleTempleCho">YES</button>
+            <button id="puzzleTempleNo" class="puzzleTempleCho">NO</button>
+        </div>
+        <p class="story" id="catTempleQ">You arrive at the TEMPLE door. As expected the first thing is a puzzle to open the door. The sign says 'I am a 3 letter word and I cannot fall 10 stories. However, I can fall 70 stories. I am either a dog or a cat. Shout what I am at the door.' You think about the puzzle for several minutes.</p>
+        <div class = "choices" id="catTempleAns">
+            <button id="catTempleDog" class="catTempleCho">DOG</button>
+            <button id="catTempleCat" class="catTempleCho">CAT</button>
+        </div>
+        <p class="story" id="chainTempleQ">You shout CAT at the door. The door shudders and opens slowly. You rush inside.<br><br>As you walk across the last step into the TEMPLE, braziers catch fire in a circular pattern, they light up the room. It is more like a tower than a room. The ceiling reaches into the darkness and the soft glow of the fire reflects off of the water that fills up who knows how much of the room below your feet. The water is still. with a small spire protruding in the middle. You look to your left and find another puzzle plaque, 'You must choose us in order of when we speak. I am at the bottom, I fight to no avail to my uppers. I am the almighty that watches these calm waters. I prey on the first, but fear the second. Step on our switches to choose.' You look forward and see three symbols inprinted on the floor: a HAWK, a PLANKTON, and a FISH. In which order do you step on the switches?</p>
+        <div class = "choices" id="chainTempleAns">
+            <button id = "hawkPlanktonFish" class="chainTempleCho">HAWK, PLANKTON, FISH</button>
+            <button id = "hawkFishPlankton" class="chainTempleCho">HAWK, FISH, PLANKTON</button>
+            <br>
+            <button id = "planktonFishHawk" class="chainTempleCho">PLANKTON, FISH, HAWK</button>
+            <button id = "planktonHawkFish" class="chainTempleCho">PLANKTON, HAWK, FISH</button>
+            <br>
+            <button id = "fishPlanktonHawk" class="chainTempleCho">FISH, PLANKTON, HAWK</button>
+            <button id = "fishHawkPlankton" class="chainTempleCho">FISH, HAWK, PLANKTON</button>
+        </div>
+        <p class="story" id="weaponTempleQ">As you step on FISH, gears behind the walls turn. The water drains, revealing stairs leading down into a dark archway. You push on. As you pass the archway. The braziers wink out, plunging you into darkness. A door falls shut behind you. Putting your ear to the door, you hear the flow of water, it's dry as you put your hand to the creases. You continue deeper into the TEMPLE. You walk into a cavern bathed in light. The room is circular. A single bridge leads to a middle platform surrounded by water. You walk onto the bridge to the center of the platform. Your foot falls onto a switch. Gears turn and the bridge crashes into the water. Leaving you on the platform. A low rumble causes more ripples in the water. Fins emerge from the water and then a giant snake bursts out of the water. It's eyes watch you. Do you use your element or do you use the sword on your hip?</p>
+        <div class = "choices" id="weaponTempleAns">
+           <button id = "weaponTempleEl" class="weaponTempleCho">MAGIC</button>
+           <button id = "weaponTempleSword" class="weaponTempleCho">SWORD</button>
+        </div>
+        <p class="story" id="stratTempleQ">You unsheath the sword the elders gave to you. It glows with a strange light.  The hairs on your arm and neck stick straight out. Do you block or attack</p>
+        <div class = "choices" id="stratTempleAns">
+           <button id = "stratTempleBlock" class="stratTempleCho">BLOCK</button>
+           <button id = "stratTempleAttack" class="stratTempleCho">ATTACK</button>
+        </div>
+        <p class="story" id="exitSwordTempQ">The snake snaps at you, but you BLOCK the snake. The snake arches as electricity courses through it. It collapses. Smoldering, the corpse slides into the water. You turn and look at the door you went through to get into the room. The door is open. It looks far enough to leap, but you're not sure if you can make it. There also seems to be something written on the platform. Do you try the JUMP or see what's WRITTEN.</p>
+        <div class = "choices" id="exitSwordTempAns">
+           <button id = "exitSwordTempJump" class="exitSwordTempCho">JUMP</button>
+           <button id = "exitSwordTempRead" class="exitSwordTempCho">READ</button>
+        </div>
+        <p class = "story" id="exitFireQ">Your hands alight with a blue fire. The snake shies from the fire. You blast fire at the snake. It hisses and shakes it's head. It snaps at you. You shoot fire into it's open jaw. The entire snake glows then starts disentigrating. The ashes disperse into the water.ou turn and look at the door you went through to get into the room. The door is open. It looks far enough to leap, but you're not sure if you can make it. There also seems to be something written on the platform. Do you try the JUMP or see what's WRITTEN.</p>
+        <div class = "choices" id="exitFireAns">
+           <button id = "exitFireJump" class="exitFireCho">JUMP</button>
+           <button id = "exitFireRead" class="exitFireCho">READ</button>
+        </div>
+        <p class = "story" id="exitWaterQ">You stand completely still, except for you hands twitch. The water encircling the snake starts to freeze. She snaps at you, your hand shoots up, creating a wave of water that deflects the snake. She hisses at you. You are completely still as you control the water below the surface to collect in pools , but you hold them back as well. The snake starts at you and you swing you hands forward, almost clapping. The two pools of water shoot towards the snake's head, freezing into spears. The snake's head is obliterated and the headless corpse falls into the now empty gap around the platfrom.<br>Now you have to get out. There's something written on the platform. Do you traverse the gap to the DOOR or do you read what's WRITTEN?</p>
+        <div class = "choices" id="exitWaterAns">
+           <button id = "exitWaterDoor" class="exitWaterCho">DOOR</button>
+           <button id = "exitWaterRead" class="exitWaterCho">READ</button>
+        </div>
+        <p class = "story" id="exitDoorQ">You shift the ice to form a bridge. You walk across. It disintegrates behind you. You walk back up the stairs to the door that shut behind you. You press your hand to the wall. There is spot where you could grab and lift. Do you lift or use your magic to open the door?</p>
+        <div class = "choices" id="exitDoorAns">
+           <button id = "exitDoorLift" class="exitDoorCho">LIFT</button>
+            <button id = "exitDoorEl" class="exitDoorCho">MAGIC</button>
+        </div>
+        <p class = "story" id="sinkTempleQ">You crouch and wipe the dust off of the platfrom. It reads 'As you watch a boat set sail across an ocean. The boat appears to sink into the ocean. Is this because the Earth is round or it just ends? Shout your answer.' You trace the scenario into dust on the platform and come to the realization.</p>
+        <div class = "choices" id="sinkTempleAns">
+        	<button id = "sinkTempleRound" class="sinkTempleCho">ROUND</button>
+        	<button id = "sinkTempleEnd" class="sinkTempleCho">ENDS</button>
+        </div>
+ 	 </div>
+ 	 <div id="mainStoryEnd">
+ 	    <br>
+ 	    <br>
+ 	    <p class="story">You arrive back at the School of Mages. The elders are proud that you have survived the long and dangerous journey. They appoint you to Headmaster of the School of Mages. You oversee the grounds.<p>
+ 	    <br>
+ 	    <p class="story" id="green">CONGRATULATIONS. YOU HAVE COMPLETED THE GAME. I HOPE YOU HAD FUN. TRY AGAIN AND CHOOSE DIFFERENTLY TO GET DIFFERENT RESULTS.</p>
+ 	 </div>
+         <button id="resetButton">RESET</button>
+         <br>
+         <br>
+         <h3>The Code</h3>
+         <div id="screenshotContainer">
+           <img src="Images/jscript1.png"/>
+           <img src="Images/jscript2.png"/>
+           <img src="Images/jscript3.png"/>
+           <img src="Images/jscript4.png"/>
+           <img src="Images/jscript5.png"/>
+           <img src="Images/jscript6.png"/>
+           <img src="Images/jscript7.png"/>
+           <img src="Images/jscript8.png"/>
+           <img src="Images/jscript9.png"/>
+           <img src="Images/jscript10.png"/>
+           <img src="Images/jscript11.png"/>
+           <img src="Images/jscript12.png"/>
+           <img src="Images/jscript13.png"/>
+           <img src="Images/jscript14.png"/>
+         </div>
+     </div>
+     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> FOR ONLINE -->
+     <script src="jquery-1.12.1.min.js"></script>
+     <script type="text/javascript" src = "techsite.js"></script>
+     <script type="text/javascript" src = "jscript.js"></script>
+   </body>
+</html>

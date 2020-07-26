@@ -1,0 +1,17 @@
+a {
+  color: rgb(74,182,199);
+}
+
+body {
+  background-color: #66FF66;
+}
+
+.menu-bar-link:hover {
+   border: 1px solid #66FF66; 
+}
+#menu-open:hover {
+   color: #FFF; 
+}
+ul ul li {
+   font-size: 90%;
+}

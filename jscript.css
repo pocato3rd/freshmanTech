@@ -1,0 +1,245 @@
+body {
+   background-color: #6F87AF; 
+}
+button {
+   background-color: #FFF;
+}
+p1 {
+   color:#FFF;
+   font-size:1em;
+}
+.menu-bar-link:hover {
+   border: 1px solid #4D658D; 
+}
+.story, .choices {
+   text-align:center;
+}
+.active {
+   /*border: 5px solid rgb(0,255,255);*/
+}
+.disabled {
+   background-color: rgb(50,50,50);
+}
+.gameOver {
+   color: rgb(255,0,0);
+}
+.choices button {
+   margin-left:10px;
+   margin-right:10px;
+}
+/*Main Story Question 1*/
+#fire {
+   box-shadow: 0px 0px 25px rgb(255,0,0);
+}
+#water {
+   box-shadow: 0px 0px 25px rgb(0,255,238);
+}
+#earth {
+   box-shadow: 0px 0px 25px rgb(0,255,120);
+}
+/*Fire Question 1 - Morality*/
+#moralFireQ, #moralFireAns {
+   display: none;
+   /*display: block; --> ORIGINAL DISPLAY*/
+}
+.moralFireCho {
+   box-shadow: 0px 0px 25px rgb(255,255,255);
+}
+/*Fire Question 2 - Willpower*/
+#willFireQ, #willFireAns {
+   display: none;
+   /*display: block --< ORIGINAL DISPLAY*/
+}
+.willFireCho {
+   box-shadow: 0px 0px 25px rgb(255,255,255);
+}
+/*Water Question 1 - Morality*/
+#moralWaterQ, #moralWaterAns {
+   display: none;
+}
+.moralWaterCho {
+   box-shadow: 0px 0px 25px rgb(255,255,255);
+}
+/*Water Question 2 - Patience*/
+#patienceWaterQ, #patienceWaterAns {
+   display: none;
+}
+.patienceWaterCho {
+   box-shadow: 0px 0px 25px rgb(255,255,255);
+}
+/*Earth Question 1 - Morality*/
+#moralEarthQ, #moralEarthAns {
+   display: none;
+}
+.moralEarthCho {
+   box-shadow: 0px 0px 25px rgb(255,255,255);
+}
+/*Earth Question 2 - Senses*/
+#senseEarthQ, #senseEarthAns {
+   display:none;
+}
+.senseEarthCho {
+   box-shadow: 0px 0px 25px rgb(255,255,255);
+}
+/*Beginning of Part 2*/
+#mainChoice2 {
+   display:none;
+   height:auto;
+}
+#journeyDragon {
+   box-shadow: 0px 0px 25px rgb(255,0,0);
+}
+#journeyTemple {
+   box-shadow: 0px 0px 25px rgb(0,0,255);
+}
+/*Dragon Question 1 - Climb*/
+#climbDragonQ, #climbDragonAns {
+   display:none;
+}
+.climbDragonCho {
+   box-shadow: 0px 0px 25px rgb(255,255,255);
+}
+/*Dragon Question 2 - Pack*/
+#packDragonQ, #packDragonAns {
+   display:none;
+}
+.packDragonCho {
+   box-shadow: 0px 0px 25px rgb(255,255,255);
+}
+/*Dragon Question 3 - Weapon*/
+#weaponDragonQ, #weaponDragonAns {
+   display:none;
+}
+.weaponDragonCho {
+   box-shadow: 0px 0px 25px rgb(255,255,255);
+}
+/*Sword Question 1 - Strategy*/
+#strategySwordQ, #strategySwordAns {
+   display:none;
+}
+.strategySwordCho {
+   box-shadow: 0px 0px 25px rgb(255,255,255);
+}
+/*Sword Question 2 - Path*/
+#pathSwordQ, #pathSwordAns {
+   display:none;
+}
+.pathSwordCho {
+   box-shadow: 0px 0px 25px rgb(255,255,255);
+}
+/*Sword Question 3 - Exit*/
+#exitSwordQ, #exitSwordAns {
+   display:none;
+}
+.exitSwordCho {
+   box-shadow: 0px 0px 25px rgb(255,255,255);
+}
+/*CrossBow Question 1 - Accuracy*/
+#accBowQ, #accBowAns {
+   display:none;
+}
+.accBowCho {
+   box-shadow: 0px 0px 25px rgb(255,255,255);
+}
+/*CrossBow Question 2 - Range*/
+#rangeBowQ, #rangeBowAns {
+   display:none;
+}
+.rangeBowCho {
+   box-shadow:0px 0px 25px rgb(255,255,255);    
+}
+/*CrossBow Question - Aim*/
+#aimBowQ, #aimBowAns {
+   display:none;
+}
+.aimBowCho {
+   box-shadow:0px 0px 25px rgb(255,255,255); 
+}
+/*Temple Question 1 - PuzzleSolving Ability*/
+#puzzleTempleQ, #puzzleTempleAns {
+   display:none; 
+}
+.puzzleTempleCho {
+   box-shadow:0px 0px 25px rgb(255,255,255);    
+}
+/*Temple Question 2 - Cat Puzzle*/
+#catTempleQ, #catTempleAns {
+   display:none;
+}
+.catTempleCho {
+   box-shadow:0px 0px 25px rgb(255,255,255);    
+}
+/*Temple Question 3 - Food Chain*/
+#chainTempleQ, #chainTempleAns {
+   display: none;
+}
+.chainTempleCho {
+   box-shadow:0px 0px 25px rgb(255,255,255);
+   margin-top:6px;
+}
+/*Temple Question 4 - Weapon*/
+#weaponTempleQ, #weaponTempleAns {
+   display:none;
+}
+.weaponTempleCho {
+   box-shadow: 0px 0px 25px rgb(255,255,255);
+}
+/*Temple Sword Question 1 - Strat*/
+#stratTempleQ, #stratTempleAns {
+   display:none;
+}
+.stratTempleCho {
+   box-shadow: 0px 0px 25px rgb(255,255,255);
+}
+/*Temple Sword Question 2 - Exit*/
+#exitSwordTempQ, #exitSwordTempAns {
+   display:none;
+}
+.exitSwordTempCho {
+   box-shadow: 0px 0px 25px rgb(255,255,255);
+}
+/*Temple Question 5 - SINKing ship*/
+#sinkTempleQ, #sinkTempleAns {
+   display: none;
+}
+.sinkTempleCho {
+   box-shadow: 0px 0px 25px rgb(255,255,255);
+}
+/*Temple Fire Question 1 - Exit*/
+#exitFireQ, #exitFireAns{
+   display:none;
+}
+.exitFireCho {
+   box-shadow: 0px 0px 25px rgb(255,255,255); 
+}
+/*Temple Water Question 1 - Exit*/
+#exitWaterQ, #exitWaterAns {
+   display: none;
+}
+.exitWaterCho {
+   box-shadow: 0px 0px 25px rgb(255,255,255); 
+}
+/*Temple Water Question 2 - Door Exit*/
+#exitDoorQ, #exitDoorAns {
+   display:none;
+}
+.exitDoorCho {
+   box-shadow: 0px 0px 25px rgb(255,255,255); 
+}
+/*Main Story Ending*/
+#mainStoryEnd {
+   display:none;
+}
+#green {
+   color:rgb(0,255,0);
+}
+#resetButtonText {
+   color:rgb(0,0,0);
+   text-decoration:none;
+}
+#resetButton {
+   box-shadow: 0px 0px 30px rgb(255,0,255); 
+}
+.start * {
+   text-align:center;
+}
