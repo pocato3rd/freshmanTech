@@ -1,0 +1,64 @@
+body {
+   position:relative;
+   left:0px;
+   /*border:1px solid #FF00FF;*/
+   height:650px;
+   width:auto;
+}
+#menu-open {
+   position:fixed;
+   color: #000;
+   width: 50px;
+   text-align: center;
+   box-shadow: 0 0 50px #000;
+   float:left;
+}
+#menu-open:hover {
+   color: #FFF; 
+}
+#menu-bar {
+   position:fixed;
+   left:-200px;
+   color:#FFF;
+   width:180px;
+   height:auto;
+   background-color: rgba(0,0,0,0.8);
+   box-shadow: 0 0 50px #000;
+}
+.menu-bar-link {
+   border:1px solid #FFF; 
+   margin-left:5%;
+   margin-right:5%;
+   text-align:center;
+}
+.menu-bar-link:hover {
+   border: 1px solid rgb(0,255,0); 
+}
+#main-container {
+   color:#FFF;
+   background-color:rgba(0,0,0,0.8);
+   width:80%;
+   margin:auto;
+   float:center;
+   padding: 13px;
+   box-shadow: 0 0 50px #000;
+}
+.pageLink {
+   color: #FFF;
+   text-decoration: none;
+}
+#backgroundMusic {
+   position: fixed;
+   right:0px;
+   bottom:-4px;
+}
+button {
+   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+#main-container p, #main-container li, p1, h3, h2 {
+   font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+#main-container p, p1 {
+   font-size: .95em; 
+}
+/*"Trebuchet MS", Helvetica, sans-serif*/

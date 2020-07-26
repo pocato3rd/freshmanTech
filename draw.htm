@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Draw A Picture - Cato</title>
+      <link rel = "icon" href = "images/earth-icon.jpg"/>
+      <link rel = "stylesheet" href = "techsite.css"/>
+      <link rel = "stylesheet" href = "dropdown.css"/>
+      <link rel = "stylesheet" href = "draw.css"/>
+   </head>
+   <body>
+      <div id="menu-bar">
+          <p class="menu-bar-link"><a class="pageLink" href="index.htm">HOME</a></p>
+          <p class="menu-bar-link"><a class="pageLink" href="bcamsc.htm">BCAMSC</a></p>
+          <p class="menu-bar-link"><a class="pageLink" href="penn.htm">PENNFIELD</a></p>
+          <p class="menu-bar-link"><a class="pageLink" href="jscript.htm">JSCRIPT</a></p>
+          <p class="menu-bar-link"><a class="pageLink" href="draw.htm">DRAW A PICTURE</a></p>
+          <p class="menu-bar-link"><a class="pageLink" href="space.htm">OUR SOLAR SYSTEM</a></p>
+      </div>
+      <div id="menu-open">Menu</div>
+      <div id="main-container">
+          <h2>~ Draw A Picture ~</h2>
+	      <h3>How To Play</h3>
+	      <p>&nbsp &nbsp Click and drag inside the canvas to draw. The drop down changes the canvas' background color and the color buttons change the color of your 'brush'. The size buttons change the size of your 'brush'. To clear the canvas click 'CLEAR'. This will set the canvas color to white and remove all points made. However, the color and size of the 'brush' will remain the same.</p>
+	      <p>&nbsp &nbsp When the size is :</p>
+	      <ul>
+		<li>red - your brush is 5px</li>
+		<li>green - your brush is 10px</li>
+		<li>blue - your brush is 20px</li>
+          &nbsp &nbsp
+          <!--DROP DOWN FOR BACKGROUND COLOR-->
+          <pb class="dropdown">
+            <button onclick="myFunction()" id="bgColorBttn" class="dropbtn">Background Color</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a id="whiteBG">White</a>
+                <a id="blackBG">Black</a>
+                <a id="redBG">Red</a>
+                <a id="orangeBG">Orange</a>
+                <a id="yellowBG">Yellow</a>
+                <a id="greenBG">Green</a>
+                <a id="blueBG">Blue</a>
+                <a id="purpleBG">Violet</a>
+            </div>
+          </pb>
+          <!--END DROP DOWN-->
+	  <!--DROP DOWN FOR BRUSH COLOR-->
+          <pb class="dropdown">
+            <button onclick="myFunction2()" id="colorBttn" class="dropbtn">Color</button>
+            <div id="myDropdown2" class="dropdown-content">
+                <a id="white">White</a>
+                <a id="black" class="activeC">Black</a>
+                <a id="red">Red</a>
+                <a id="orange">Orange</a>
+                <a id="yellow">Yellow</a>
+                <a id="green">Green</a>
+                <a id="blue">Blue</a>
+                <a id="purple">Violet</a>
+            </div>
+          </pb>
+          <!--END COLOR DROP DOWN-->
+	  <!--DROP DOWN FOR SIZE COLOR-->
+          <pb class="dropdown">
+            <button onclick="myFunction3()" id="sizeBttn" class="dropbtn">Size</button>
+            <div id="myDropdown3" class="dropdown-content">
+                <a id="small">5px</a>
+                <a id="medium" class="activeS">10px</a>
+                <a id="larger">20px</a>
+            </div>
+          </pb>
+          <!--END SIZE DROP DOWN-->
+	  <br><br><br>
+	  <!--Change fill color, size changes, and reset drawings-->
+          <div id="canvas"></div>
+          <pb id="reset">CLEAR</pb>
+      </div>
+      <script src="jquery-1.12.1.min.js"></script>
+      <script type="text/javascript" src = "techsite.js"></script>
+      <script type="text/javascript" src = "draw.js"></script>
+      <script type="text/javascript" src = "drawJq.js"></script>
+      <script type="text/javascript" src = "dropdown.js"></script>
+   </body>
+</html>
+<!--
+Red /
+Orange
+Yellow /
+Green /
+Blue /
+Indigo
+Violet /
+-->

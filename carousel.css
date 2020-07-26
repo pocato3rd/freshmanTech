@@ -1,0 +1,6 @@
+#screenshotContainer {
+	/*border: 10px solid #FF0000;*/
+	width: 66%;
+	height: 750px;
+	overflow: auto;
+}

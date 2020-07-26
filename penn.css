@@ -1,0 +1,40 @@
+body {
+  background-color: #009900;
+}
+
+.menu-bar-link:hover {
+   border: 1px solid #009900; 
+}
+#yellow {
+   color: #FFFF00;
+}
+#green {
+   color: #00FF00;
+}
+#red {
+   color: #FF0000;
+}
+#blue {
+   color: #0000FF;
+}
+#tbleClasses {
+   width: 90%;
+   margin: auto;
+}
+.classHead {
+   background-color: #009900;
+}
+.classData {
+   background-color: #FFF;
+   color: #000;
+   padding: .5% 1% .5% 1%;
+}
+#pennPic {
+   display: block;
+   margin: auto;
+   width: 259px;
+   height: 194px;
+}
+li {
+   font-style: italic;
+}

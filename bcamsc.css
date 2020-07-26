@@ -1,0 +1,41 @@
+body {
+  background-color: rgb(74,182,199);    
+}
+
+.menu-bar-link:hover {
+   border: 1px solid rgb(74,182,199); 
+}
+.check {
+   color: #00FF00;
+}
+#scCas {
+   float: left;
+}
+#tbleClasses {
+   width: 90%;
+   margin: auto;
+}
+.classHead {
+   background-color: rgb(74,182,199);
+}
+.classData {
+   background-color: #FFF;
+   color: #000;
+   padding: .5% 1% .5% 1%;
+}
+
+#right {
+   padding-left: 5px;
+   position: relative;
+   left: 15px;
+}
+#mscPic {
+   display: block;
+   margin: auto;
+}
+#bcamscHead {
+   display: block;
+}
+.descript {
+   width: 40%;
+}
